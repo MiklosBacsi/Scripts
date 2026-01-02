@@ -1,0 +1,5 @@
+alias die='init 0'
+alias revive='init 6'
+alias ethernet='sudo ip link set dev enp8s0 down 2>/dev/null; sudo ip link set dev enps40 2>/dev/null; sleep 2; sudo ip link set dev enp8s0 up; sudo ip link set dev enp8s0 up; sudo systemctl restart NetworkManager'
+alias bios='sudo systemctl reboot --firmware-setup'
+alias resolve='/opt/resolve/bin/resolve'
